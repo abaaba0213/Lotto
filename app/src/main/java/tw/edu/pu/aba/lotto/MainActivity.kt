@@ -15,6 +15,12 @@ class MainActivity : AppCompatActivity() {
     }
     fun happy(v: View){
         var t: TextView = findViewById(R.id.txv)
-        t.text = (1..100).random().toString()
+        if (v.id == R.id.btn){
+            t.text = (1..100).random().toString()
+        }
+        else{
+            t.text = "0"
+        }
+
     }
 }
